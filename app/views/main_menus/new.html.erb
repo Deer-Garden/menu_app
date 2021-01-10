@@ -1,0 +1,33 @@
+<div class="contents row">
+  <div class="container">
+    <h3>投稿する</h3>
+    <%= form_with(model: @main_menu, local: true) do |form| %>
+      <%# <%= render 'error_messages', model: @main_menu %> %>
+      <div class="field">
+        <%= form.label :name , "料理名" %>
+        <%= form.text_field :name, placeholder: "親子丼" %>
+      </div>
+      <div class="field">
+        <%= form.label :kcal , "カロリー" %>
+        <%= form.text_field :kcal, placeholder: "400" %>
+      </div>
+      <div class="field">
+        <%= form.label :image , "写真" %>
+        <%= form.text_field :image, placeholder: "URL" %>
+      </div>
+      <div class="field">
+        <%= form.label :ingredient , "材料" %>
+        <%= form.text_area :ingredient, placeholder: "白菜 1/2" %>
+      </div>
+      <div class="field">
+        <%= form.label :expiration , "説明" %>
+        <%= form.text_area :expiration, placeholder: "とろとろ卵の甘じょっぱい親子丼" %>
+      </div>
+      <div class="field">
+        <%= form.label :recipe , "レシピ" %>
+        <%= form.text_area :recipe, placeholder: "鍋と玉ねぎを入れる" %>
+      </div>
+      <%= form.submit "投稿する" %>
+    <% end %>
+  </div>
+</div>

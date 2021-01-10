@@ -1,0 +1,25 @@
+<%= render "shared/header" %>
+
+<div class='main'>
+  <div class='contents row'>
+    <% @main_menus.each do |main_menu| %>
+      <div class='menu'>
+        <div class='main_menus_header'>
+          <div class='main_menus_name'>
+            <p><%= @main_menus.name %></p>
+          </div>
+        </div>
+        <div class='main_menus_img'>
+          <%# <%= image_tag main_menus.img, class: 'main_menu_image' %> 
+        </div>
+        <div class='main_menu_user_name'>
+          takashi
+        </div>
+      </div>
+    <% end %>  
+  </div>
+</div>
+
+<%= render "shared/footer" %>
+
+<%# <%= link_to current_user.name, edit_user_path(current_user) %> %>
