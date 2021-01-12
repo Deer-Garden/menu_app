@@ -2,7 +2,7 @@
   <div class="container">
     <h3>投稿する</h3>
     <%= form_with(model: @main_menu, local: true) do |f| %>
-      <%# <%= render 'error_messages', model: @main_menu %> %>
+      <%= render 'error.messages', model: f.object %>
       <div class="field">
         <%= f.label :name , "料理名" %>
         <%= f.text_field :name, placeholder: "親子丼" %>
