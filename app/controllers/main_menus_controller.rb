@@ -1,4 +1,7 @@
 class MainMenusController < ApplicationController
+  before_action :move_to_index, except: [:index, :show]
+  before_action :set_main_menu, only: [:edit, :show]
+
   def index
     @main_menus = MainMenu.all
   end
@@ -16,7 +19,31 @@ class MainMenusController < ApplicationController
     end
   end
 
+  def show
+    
+  end
+
+  def edit
+    
+  end
+
+  def destroy
+    main_menu = MainMenu.find(params[:id])
+    main_menu.destroy
+  end
+
   private
   def main_menu_params
     params.require(:main_menu).permit(:name, :image, :expiration, :ingredient, :recipe, :kcal).merge(user_id: current_user.id)
+  end
+
+  def set_main_menu
+    @main_menu = MainMenu.find(params[:id])
+  end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to action: :index
+    end
+  end
 end

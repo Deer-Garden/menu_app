@@ -1,7 +1,4 @@
-<div class="contents row">
-  <div class="container">
-    <h3>投稿する</h3>
-    <%= form_with(model: @main_menu, local: true) do |f| %>
+<%= form_with(model: @main_menu, local: true) do |f| %>
       <%# <%= render 'error_messages', model: @main_menu %> %>
       <div class="field">
         <%= f.label :name , "料理名" %>
@@ -31,6 +28,4 @@
         <%= f.text_area :recipe, placeholder: "鍋と玉ねぎを入れる" %>
       </div>
       <%= f.submit "投稿する" %>
-    <% end %>
-  </div>
-</div>
+<% end %>
