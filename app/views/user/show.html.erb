@@ -1,6 +1,10 @@
+<%= render "shared/header" %>
+
 <div class="contents row">
   <p><%= @nickname %>さんの投稿一覧</p>
   <% @main_menus.each do |main_menu| %>
     <%= render partial: "main_menus/main_menu", locals: { main_menu: main_menu } %>
   <% end %>
 </div>
+
+<%= render "shared/footer" %>

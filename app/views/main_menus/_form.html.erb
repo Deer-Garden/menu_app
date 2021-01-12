@@ -1,5 +1,5 @@
 <%= form_with(model: @main_menu, local: true) do |f| %>
-      <%# <%= render 'error_messages', model: @main_menu %> %>
+      <%= render 'error.messages', model: f.object %> 
       <div class="field">
         <%= f.label :name , "料理名" %>
         <%= f.text_field :name, placeholder: "親子丼" %>
@@ -10,7 +10,6 @@
       </div>
       <div class="field">
         <label class="form-image">
-      <%# 　<span class="image-file">画像</span> %>
         <%= f.label :image , "画像" %>
         <%= f.file_field :image, class: 'hidden' %>
     　　</label>
