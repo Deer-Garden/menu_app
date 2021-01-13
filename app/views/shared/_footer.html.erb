@@ -1,5 +1,7 @@
 <footer>
   <p>
-    Copyright.
+    <% @main_menu.each do |main_menu| %>
+      <%= main_menu.name %>
+    <% end %>
   </p>
 </footer>
