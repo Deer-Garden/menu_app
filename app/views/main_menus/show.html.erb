@@ -1,9 +1,8 @@
-<%= render "shared/header" %>
+<%= render "hum" %>
 <div class='main'>
   <div class='contents row'>
     <% if user_signed_in? && current_user.id == @main_menu.user_id %>
       <div class="more">
-        <%# <span><%= image_tag 'arrow_top.png' %></span> %>
         <ul class="more_list">
           <li>
             <%= link_to '編集', edit_main_menu_path(@main_menu.id), method: :get %>
@@ -14,13 +13,13 @@
         </ul>
       </div>
     <% end %>
-          <div class='menu'>
+          <div class='show_menu'>
             <div class='main_menus_header'>
               <div class='main_menus_name'>
                 <%= @main_menu.name %>
               </div>
               <div class='main_menus_kcal'>
-                <%= @main_menu.kcal %>
+                <%= @main_menu.kcal %>kcal
               </div>
             </div>
             <div class='main_menu_body'>
