@@ -4,7 +4,7 @@ class MainMenusController < ApplicationController
 
   def index
     @main_menus = MainMenu.includes(:user).order("created_at DESC")
-    @main_menu = MainMenu.order("RAND()").limit(2)
+    @m_menu = MainMenu.order("RAND()").limit(3)
   end
 
   def new
@@ -21,7 +21,7 @@ class MainMenusController < ApplicationController
   end
 
   def show
-    # @main_menu = MainMenu.all.includes(:user)
+    
   end
 
   def edit
