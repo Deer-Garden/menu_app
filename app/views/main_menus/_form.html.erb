@@ -1,30 +1,30 @@
 <%= form_with(model: @main_menu, local: true) do |f| %>
       <%= render 'error.messages', model: f.object %> 
       <div class="field">
-        <%= f.label :name , "料理名" %>
+        <p>料理名</p>
         <%= f.text_field :name, placeholder: "親子丼" %>
       </div>
       <div class="field">
-        <%= f.label :kcal , "カロリー" %>
+        <p>カロリー</p>
         <%= f.text_field :kcal, placeholder: "400" %>
       </div>
       <div class="field">
         <label class="form-image">
-        <%= f.label :image , "画像" %>
+        <p>画像</p>
         <%= f.file_field :image, class: 'hidden' %>
     　　</label>
       </div>
       <div class="field">
-        <%= f.label :ingredient , "材料" %>
+        <p>材料</p>
         <%= f.text_area :ingredient, placeholder: "白菜 1/2" %>
       </div>
       <div class="field">
-        <%= f.label :expiration , "説明" %>
+        <p>説明</p>
         <%= f.text_area :expiration, placeholder: "とろとろ卵の甘じょっぱい親子丼" %>
       </div>
       <div class="field">
-        <%= f.label :recipe , "レシピ" %>
+        <p>レシピ</p>
         <%= f.text_area :recipe, placeholder: "鍋と玉ねぎを入れる" %>
       </div>
-      <%= f.submit "投稿する" %>
+      <%= f.submit "投稿する", :class => 'submit_btn' %>
 <% end %>

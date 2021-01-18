@@ -73,7 +73,7 @@
 }
 
 .site-header__wrapper {
-    background-color: #ce8f3c;
+    background:  linear-gradient(#ff9100, #ffd49d);
     height: 70px;
     padding-top: 10px;
     position: fixed;
@@ -84,7 +84,7 @@
 }
 
 .brand{
-    margin-left: 24px;
+    margin-left: 14px;
     font-size: 50px;
     font-family: 'Kufam', cursive;
 }
@@ -96,12 +96,12 @@
 
 /* menu表示 */
 .menu {
-    margin: 10px;
+    margin-bottom: 10px;
     position: relative;
 }
 
 .main_menus_header{
-    background-color: salmon;
+    background:  linear-gradient(#ff9100, #ffd49d);
     margin-right: 5%;
     margin-left: 5%;
     display: flex;
@@ -116,7 +116,7 @@
 }
 
 .main_menus_footer {
-    background-color: rgb(245, 233, 65);
+    background-color: rgb(245, 229, 229);
     margin-right: 5%;
     margin-left: 5%;
 }
@@ -126,30 +126,51 @@
 }
 
 /* 詳細画面 */
+
+.more {
+    margin-top: 5px;
+}
+
+ul.more_list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.more_list li{
+    border: solid 1px black;
+    border-radius: 10%;
+}
+
 .show_menu {
-    margin-top: 84px;
     position: relative;
+    margin-top: 95px;
 }
 
 .main_menus_name{
     position:absolute;
     top: 0%;
     left: 5%;
-    text-shadow: 1px 2px 3px white;
-    color: black;
+    text-shadow: 1px 2px 3px black;
+    color: white;
+    font-size: 24px;
 }
 
 .main_menus_kcal{
     position:absolute;
     top: 0%;
-    right: 5%;
-    text-shadow: 1px 2px 3px white;
-    color: black;
+    right: 7%;
+    text-shadow: 1px 2px 3px black;
+    color: white;
 }
 
 .main_menu_expiration,.main_menu_ingredient,.main_menu_recipe{
     margin-right: 5%;
     margin-left: 5%;
+}
+
+.main_menu_expiration span,.main_menu_ingredient span,.main_menu_recipe span{
+    font-weight: bold;
 }
 
 .main_menu_expiration{
@@ -162,4 +183,60 @@
 
 .main_menu_recipe{
     background-color: rgb(233, 183, 74);
+}
+
+.contents.rows {
+    margin-top: 84px;
+}
+
+.contents.rows p {
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+
+.user_main_menus_header{
+    display: flex;
+}
+
+.user_menu{
+    position: relative;
+}
+
+.user_main_menus_name{
+    position:absolute;
+    top: 0%;
+    left: 5%;
+    text-shadow: 1px 2px 3px white;
+    color: black;
+}
+
+.user_main_menus_kcal{
+    position:absolute;
+    top: 0%;
+    right: 7%;
+    text-shadow: 1px 2px 3px white;
+    color: black;
+}
+
+.user_main_menus_footer{
+    margin-bottom: 5px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+/* edit画面 */
+.field {
+    border: solid 1px blue;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.new-btn,.submit_btn {
+    border: solid 1px black;
+    margin-left: 40%;
 }

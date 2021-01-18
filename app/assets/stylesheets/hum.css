@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   z-index: 90;
-  background-color:  #ce8f3c;
+  background:  linear-gradient(#ff9100, #ffd49d);
   border-radius: 4%;
 }
 .menu-btn span,
@@ -52,7 +52,7 @@
   top: 0;
   left: 100%;/*leftの値を変更してメニューを画面外へ*/
   z-index: 80;
-  background-color:  #ce8f3c;
+  background:  linear-gradient(#ff9100, #ffd49d);
   transition: all 0.5s;/*アニメーション設定*/
 }
 .menu-content ul {

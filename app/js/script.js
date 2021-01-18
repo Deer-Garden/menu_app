@@ -1,4 +1,4 @@
-'use-strict';
+
 
 const slider = function(){
     // Next(Prev)ボタンの取得
