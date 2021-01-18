@@ -127,8 +127,15 @@
 
 /* 詳細画面 */
 
+.past_menu{
+    margin-left: 5%;
+    font-size: 26px;
+    margin-top: 23px;
+}
+
 .more {
     margin-top: 5px;
+    font-size: 12px;
 }
 
 ul.more_list {
@@ -149,8 +156,8 @@ ul.more_list {
 
 .main_menus_name{
     position:absolute;
-    top: 0%;
-    left: 5%;
+    top: 2%;
+    left: 7%;
     text-shadow: 1px 2px 3px black;
     color: white;
     font-size: 24px;
@@ -158,7 +165,7 @@ ul.more_list {
 
 .main_menus_kcal{
     position:absolute;
-    top: 0%;
+    top: 2%;
     right: 7%;
     text-shadow: 1px 2px 3px black;
     color: white;
@@ -204,8 +211,8 @@ ul.more_list {
 
 .user_main_menus_name{
     position:absolute;
-    top: 0%;
-    left: 5%;
+    top: 1%;
+    left: 7%;
     text-shadow: 1px 2px 3px white;
     color: black;
 }
@@ -239,4 +246,38 @@ h3 {
 .new-btn,.submit_btn {
     border: solid 1px black;
     margin-left: 40%;
+}
+
+/* suggest */
+.m_menus_today{
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+.m_menu {
+    margin-top: 75px;
+    position: relative;
+}
+.m_menu_image {
+    width: 90%;
+    height: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.m_menus_name{
+    position: absolute;
+    top: 16%;
+    left: 6%;
+    text-shadow: 1px 2px 3px black;
+    color: white;
+    font-size: 24px;
+}
+
+.m_menus_kcal {
+    position: absolute;
+    top: 16%;
+    right: 7%;
+    text-shadow: 1px 2px 3px black;
+    color: white;
 }

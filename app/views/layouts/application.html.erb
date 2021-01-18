@@ -9,13 +9,14 @@
     <link rel="stylesheets" href="style.css">
     <%= stylesheet_link_tag 'application', media: 'all'%>
     <%= javascript_pack_tag 'application' %>
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap" rel="stylesheet">
   </head>
 
   <body>
-
+    
     <%= yield %>
     
   </body>
