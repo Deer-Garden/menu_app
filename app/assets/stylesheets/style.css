@@ -212,17 +212,18 @@ ul.more_list {
 .user_main_menus_name{
     position:absolute;
     top: 1%;
-    left: 7%;
-    text-shadow: 1px 2px 3px white;
-    color: black;
+    left: 6%;
+    text-shadow: 1px 2px 3px black;
+    color: white;
+    font-size: 24px;
 }
 
 .user_main_menus_kcal{
     position:absolute;
     top: 0%;
     right: 7%;
-    text-shadow: 1px 2px 3px white;
-    color: black;
+    text-shadow: 1px 2px 3px black;
+    color: white;
 }
 
 .user_main_menus_footer{

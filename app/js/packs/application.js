@@ -6,7 +6,7 @@
 require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
-require('jquery')
+
 require("../scripts")
 require("../script")
 require("../swiper")
@@ -19,3 +19,4 @@ require("../swiper")
 // const imagePath = (name) => images(name, true)
 //= require swiper/swiper-bundle.js
 //= require swiper.js
+//= require jquery_ujs

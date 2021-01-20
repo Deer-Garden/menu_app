@@ -72,8 +72,20 @@
   padding: 9px 15px 10px 0;
   position: relative;
 }
+
+form.button_to {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+
 .menu-content ul li a::before {
-  content: "";
+  /* content: ""; */
   width: 7px;
   height: 7px;
   border-top: solid 2px #ffffff;

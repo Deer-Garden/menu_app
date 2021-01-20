@@ -1,6 +1,7 @@
 class MainMenusController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
-  before_action :set_main_menu, only: [:edit, :show, :update]
+  before_action :set_main_menu, only: [:edit, :show, :update, :destroy]
+  protect_from_forgery :except => [:destroy]
 
   def index
     @main_menus = MainMenu.includes(:user).order("created_at DESC")
@@ -37,8 +38,10 @@ class MainMenusController < ApplicationController
   end
 
   def destroy
-    main_menu = MainMenu.find(params[:id])
-    main_menu.destroy
+    if @main_menu.user == current_user
+      @main_menu.destroy
+      redirect_to root_path
+    end
   end
 
   private
