@@ -4,4 +4,8 @@ class UsersController < ApplicationController
     @main_menus = user.main_menus
     @nickname = user.nickname
   end
+  def destroy
+    user = User.find(params[:id])
+    user.destroy
+  end
 end
