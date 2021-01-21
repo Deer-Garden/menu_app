@@ -1,10 +1,11 @@
 class MainMenusController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
-  before_action :set_main_menu, only: [:edit, :show, :update]
+  before_action :set_main_menu, only: [:edit, :show, :update, :destroy]
+  protect_from_forgery :except => [:destroy]
 
   def index
     @main_menus = MainMenu.includes(:user).order("created_at DESC")
-    @main_menu = MainMenu.order("RAND()").limit(2)
+    @m_menu = MainMenu.order("RAND()").limit(1)
   end
 
   def new
@@ -21,7 +22,7 @@ class MainMenusController < ApplicationController
   end
 
   def show
-    # @main_menu = MainMenu.all.includes(:user)
+    
   end
 
   def edit
@@ -37,14 +38,10 @@ class MainMenusController < ApplicationController
   end
 
   def destroy
-<<<<<<< Updated upstream
+
     main_menu = MainMenu.find(params[:id])
     main_menu.destroy
-=======
-     @main_menu.user == current_user
-      @main_menu.destroy
-     
->>>>>>> Stashed changes
+
   end
 
   private

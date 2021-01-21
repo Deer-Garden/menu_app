@@ -174,12 +174,16 @@ ul.more_list {
 .main_menu_expiration,.main_menu_ingredient,.main_menu_recipe{
     margin-right: 5%;
     margin-left: 5%;
+
     white-space: pre-wrap;
+
 }
 
 .main_menu_expiration span,.main_menu_ingredient span,.main_menu_recipe span{
     font-weight: bold;
+
     float: left;
+
 }
 
 .main_menu_expiration{
@@ -285,7 +289,9 @@ h3 {
     color: white;
 }
 
+
 /* dummy data */
 .dummy_main{
     margin-top: 30px;
 }
+
