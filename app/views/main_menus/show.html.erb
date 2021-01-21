@@ -1,6 +1,38 @@
 <%= render "shared/header" %>
 <div class='main'>
   <div class='contents row'>
+<<<<<<< Updated upstream
+=======
+    <div class='show_menu'>
+      <div class='main_menus_header'>
+        <div class='main_menus_name'>
+          <%= @main_menu.name %>
+        </div>
+        <div class='main_menus_kcal'>
+          <%= @main_menu.kcal %>kcal
+        </div>
+      </div>
+      <div class='main_menu_body'>
+        <div class='main_menus_img'>
+          <%= image_tag @main_menu.image, class: 'main_menu_image' %>
+        </div>
+        <div class='main_menu_expiration'>
+          <span>概要:</span><%= @main_menu.expiration %>
+        </div>
+        <div class='main_menu_ingredient'>
+          <span>材料:</span><%= @main_menu.ingredient %>
+        </div>
+        <div class='main_menu_recipe'>
+          <span>作り方:</span><%= @main_menu.recipe %>
+        </div>
+      </div>
+      <div class='main_menus_footer'>
+        <div class='main_menu_user_name'>
+          <span>by</span><%= @main_menu.user.nickname %>
+        </div>
+      </div>
+    </div>
+>>>>>>> Stashed changes
     <% if user_signed_in? && current_user.id == @main_menu.user_id %>
       <div class="more">
         <%# <span><%= image_tag 'arrow_top.png' %></span> %>
@@ -9,7 +41,11 @@
             <%= link_to '編集', edit_main_menu_path(@main_menu.id), method: :get %>
           </li>
           <li>
+<<<<<<< Updated upstream
             <%= link_to '削除', main_menu_path(@main_menu.id), method: :delete %>
+=======
+            <%= button_to '削除', main_menu_path, {method: :delete, class: "delete-button"} %>
+>>>>>>> Stashed changes
           </li>
         </ul>
       </div>

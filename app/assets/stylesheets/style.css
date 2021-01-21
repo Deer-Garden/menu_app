@@ -1,0 +1,291 @@
+
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 100px auto 0;
+}
+
+.sliderbox{
+    border: 2px solid red;
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    
+}
+
+.sliderlist{
+    display: flex;
+    list-style: none;
+}
+
+.sliderlist__item{
+    flex-shrink: 0;
+    width: 500px;
+    height: 300px;
+}
+
+.sliderlist__item1{
+    background-color: rgb(150, 48, 48);
+   
+}
+
+.sliderlist__item2{
+    background-color: rgb(43, 31, 97);
+}
+
+.sliderlist__item3{
+    background-color: rgb(39, 148, 39);
+}
+
+/* 矢印 */
+.prev{
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    cursor: pointer;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    cursor: pointer;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.site-header__wrapper {
+    background:  linear-gradient(#ff9100, #ffd49d);
+    height: 70px;
+    padding-top: 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 3;
+}
+
+.brand{
+    margin-left: 14px;
+    font-size: 50px;
+    font-family: 'Kufam', cursive;
+}
+
+.nav__wrapper{
+    display: flex;
+    text-align: right;
+}
+
+/* menu表示 */
+.menu {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.main_menus_header{
+    background:  linear-gradient(#ff9100, #ffd49d);
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_menu_image{
+    width: 90%;
+    height: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.main_menus_footer {
+    background-color: rgb(245, 229, 229);
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.main_menu_user_name {
+    text-align: right;
+}
+
+/* 詳細画面 */
+
+.past_menu{
+    margin-left: 5%;
+    font-size: 26px;
+    margin-top: 23px;
+}
+
+.more {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+ul.more_list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.more_list li{
+    border: solid 1px black;
+    border-radius: 10%;
+}
+
+.show_menu {
+    position: relative;
+    margin-top: 95px;
+}
+
+.main_menus_name{
+    position:absolute;
+    top: 2%;
+    left: 7%;
+    text-shadow: 1px 2px 3px black;
+    color: white;
+    font-size: 24px;
+}
+
+.main_menus_kcal{
+    position:absolute;
+    top: 2%;
+    right: 7%;
+    text-shadow: 1px 2px 3px black;
+    color: white;
+}
+
+.main_menu_expiration,.main_menu_ingredient,.main_menu_recipe{
+    margin-right: 5%;
+    margin-left: 5%;
+    white-space: pre-wrap;
+}
+
+.main_menu_expiration span,.main_menu_ingredient span,.main_menu_recipe span{
+    font-weight: bold;
+    float: left;
+}
+
+.main_menu_expiration{
+    background-color: rgb(233, 183, 74);
+}
+
+.main_menu_ingredient{
+    background-color: rgb(245, 233, 65);
+}
+
+.main_menu_recipe{
+    background-color: rgb(233, 183, 74);
+}
+
+.contents.rows {
+    margin-top: 84px;
+}
+
+.contents.rows p {
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+
+.user_main_menus_header{
+    display: flex;
+}
+
+.user_menu{
+    position: relative;
+}
+
+.user_main_menus_name{
+    position:absolute;
+    top: 1%;
+    left: 6%;
+    text-shadow: 1px 2px 3px black;
+    color: white;
+    font-size: 24px;
+}
+
+.user_main_menus_kcal{
+    position:absolute;
+    top: 0%;
+    right: 7%;
+    text-shadow: 1px 2px 3px black;
+    color: white;
+}
+
+.user_main_menus_footer{
+    margin-bottom: 5px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+/* edit画面 */
+.field {
+    border: solid 1px blue;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.new-btn,.submit_btn {
+    border: solid 1px black;
+    margin-left: 40%;
+}
+
+/* suggest */
+.m_menus_today{
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+.m_menu {
+    margin-top: 75px;
+    position: relative;
+}
+.m_menu_image {
+    width: 90%;
+    height: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.m_menus_name{
+    position: absolute;
+    top: 16%;
+    left: 6%;
+    text-shadow: 1px 2px 3px black;
+    color: white;
+    font-size: 24px;
+}
+
+.m_menus_kcal {
+    position: absolute;
+    top: 16%;
+    right: 7%;
+    text-shadow: 1px 2px 3px black;
+    color: white;
+}
+
+/* dummy data */
+.dummy_main{
+    margin-top: 30px;
+}

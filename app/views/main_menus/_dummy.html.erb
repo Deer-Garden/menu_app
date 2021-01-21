@@ -1,0 +1,28 @@
+<% if @main_menus.size == 0 %>
+  <div class='dummy_main'>
+    <div class='contents row'>
+      <div class='main_menu_list'>
+          <%= link_to '#' do %>
+            <div class='menu'>
+              <div class='main_menus_header'>
+                <div class='main_menus_name'>
+                  <p>カツ丼</p>
+                </div>
+                <div class='main_menus_kcal'>
+                  <p>400kcal</p>
+                </div>
+              </div>
+              <div class='main_menus_img'>
+                <%= image_tag "oyakodon2.jpg", class: 'main_menu_image' %>
+              </div>
+              <div class='main_menus_footer'>
+                <div class='main_menu_user_name'>
+                  <span>by</span>たかし
+                </div>
+              </div>
+            </div>
+          <% end %>
+      </div>  
+    </div>
+  </div>
+<% end %>

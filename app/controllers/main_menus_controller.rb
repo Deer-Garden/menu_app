@@ -37,8 +37,14 @@ class MainMenusController < ApplicationController
   end
 
   def destroy
+<<<<<<< Updated upstream
     main_menu = MainMenu.find(params[:id])
     main_menu.destroy
+=======
+     @main_menu.user == current_user
+      @main_menu.destroy
+     
+>>>>>>> Stashed changes
   end
 
   private
