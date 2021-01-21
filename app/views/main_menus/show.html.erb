@@ -1,6 +1,7 @@
 <%= render "hum" %>
 <div class='main'>
   <div class='contents row'>
+
     <div class='show_menu'>
       <div class='main_menus_header'>
         <div class='main_menus_name'>
@@ -12,16 +13,18 @@
       </div>
       <div class='main_menu_body'>
         <div class='main_menus_img'>
-          <%= image_tag @main_menu.image.variant(resize: '500x500'), class: 'main_menu_image' %>
+
+          <%= image_tag @main_menu.image, class: 'main_menu_image' %>
         </div>
         <div class='main_menu_expiration'>
-          <span>概要</span>：<%= @main_menu.expiration %>
+          <span>概要:</span><%= @main_menu.expiration %>
         </div>
         <div class='main_menu_ingredient'>
-          <span>材料</span>：<%= @main_menu.ingredient %>
+          <span>材料:</span><%= @main_menu.ingredient %>
         </div>
         <div class='main_menu_recipe'>
-          <span>作り方</span>：<%= @main_menu.recipe %>
+          <span>作り方:</span><%= @main_menu.recipe %>
+
         </div>
       </div>
       <div class='main_menus_footer'>
@@ -30,6 +33,7 @@
         </div>
       </div>
     </div>
+
     <% if user_signed_in? && current_user.id == @main_menu.user_id %>
       <div class="more">
         <ul class="more_list">
@@ -38,7 +42,9 @@
           </li>
 
           <li>
-            <%= button_to '削除', main_menu_path, method: :delete %>
+
+            <%= button_to '削除', main_menu_path, {method: :delete, class: "delete-button"} %>
+
           </li>
         </ul>
       </div>

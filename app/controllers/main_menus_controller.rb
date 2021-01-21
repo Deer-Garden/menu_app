@@ -38,10 +38,10 @@ class MainMenusController < ApplicationController
   end
 
   def destroy
-    if @main_menu.user == current_user
-      @main_menu.destroy
-      redirect_to root_path
-    end
+
+    main_menu = MainMenu.find(params[:id])
+    main_menu.destroy
+
   end
 
   private
