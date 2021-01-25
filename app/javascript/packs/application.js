@@ -14,14 +14,9 @@
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-<<<<<<< HEAD
-<<<<<<< Updated upstream:app/javascript/packs/application.js
-=======
-//= require jquery_ujs
->>>>>>> Stashed changes:app/js/packs/application.js
-=======
+
 
 console.log('Hello World from Webpacker')
 
 //= require jquery_ujs
->>>>>>> 4ee991be70256e241cb519f2030fb366408bc9b2
+
