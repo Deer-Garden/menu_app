@@ -1,3 +1,8 @@
 document.addEventListener('DOMContentLoaded', function(){
-  console.log(123);
+
+  const ImageList = document.getElementById('image-list');
+  document.getElementById('message_image').addEventListener('change', function(e){
+    console.log(123);
+  });
+
 });
