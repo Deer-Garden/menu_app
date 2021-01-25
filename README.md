@@ -1,15 +1,23 @@
 # アプリケーション名
 menu_app
+
 # アプリケーション概要
 献立の提案をみて献立のバリエーションを増やす
-献立の投稿機能
+
 # URL
 https://menu-app32515.herokuapp.com/
+
 # テスト用アカウント
+アカウント名：テスト１
+email:sample@sample.gmail.com
+password: 000000
+
 # 利用方法
 献立が思いつかないときにこのアプリケーションを見て気に入ったのを見つけてもらう
+
 # 目指した課題解決
 毎日何かと時間を取られる献立を自動化させて、少しでも家事の手間と時間を減らしQOLをあげたい
+
 # 洗い出した用件
 提案機能
 ユーザー登録機能
@@ -19,11 +27,13 @@ https://menu-app32515.herokuapp.com/
 献立編集機能
 献立削除機能
 献立提案機能
-# 実装した機能についてのGIF
+
 # 実装予定の機能
-献立提案機能
-献立検索機能
+tagづけ機能
 献立お気に入り機能
+
+# 実装した機能についてのGIFと説明
+https://gyazo.com/e8a11202074897fbff596d8302e2d55a
 
 # データベース設計
 # README
@@ -65,3 +75,4 @@ https://menu-app32515.herokuapp.com/
 - has_many:main_menus, through: main_menu_tag_relation -->
 
 # ローカルでの動作方法
+git clone https://github.com/Deer-Garden/menu_app
