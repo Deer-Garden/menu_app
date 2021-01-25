@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -16,9 +19,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap" rel="stylesheet">
 >>>>>>> Stashed changes
+=======
+    <link rel="stylesheets" href="style.css">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap" rel="stylesheet">
+>>>>>>> 4ee991be70256e241cb519f2030fb366408bc9b2
   </head>
 
   <body>
+    
     <%= yield %>
+    
   </body>
 </html>

@@ -1,12 +1,15 @@
-/* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
-//
-// To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
-// layout file, like app/views/layouts/application.html.erb
 
+require("@rails/ujs").start()
+require("@rails/activestorage").start()
+require("channels")
+
+require("../scripts")
+require("../script")
+require("../swiper")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -14,14 +17,6 @@
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-<<<<<<< HEAD
-<<<<<<< Updated upstream:app/javascript/packs/application.js
-=======
+//= require swiper/swiper-bundle.js
+//= require swiper.js
 //= require jquery_ujs
->>>>>>> Stashed changes:app/js/packs/application.js
-=======
-
-console.log('Hello World from Webpacker')
-
-//= require jquery_ujs
->>>>>>> 4ee991be70256e241cb519f2030fb366408bc9b2
