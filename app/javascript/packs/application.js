@@ -15,3 +15,7 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+<<<<<<< Updated upstream:app/javascript/packs/application.js
+=======
+//= require jquery_ujs
+>>>>>>> Stashed changes:app/js/packs/application.js
