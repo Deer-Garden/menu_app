@@ -40,8 +40,8 @@ tagづけ機能
 
 # 実装した機能についてのGIFとdemo
 ![](https://i.gyazo.com/548332c0c53a75735ba1ae8e3fee6bb2.png)
-![demo]https://gyazo.com/e8a11202074897fbff596d8302e2d55a
-![demo]https://gyazo.com/3f353342d99753f3993a5196a293e461
+![demo](https://gyazo.com/e8a11202074897fbff596d8302e2d55a)
+![demo](https://gyazo.com/3f353342d99753f3993a5196a293e461)
 
 # 工夫したポイント
 特にスマートフォンでの使用を考えてビューを作成しました。画面がパソコンと比べると小さいので、トップページでは必要最低限の情報だけをみえるようにしました。
