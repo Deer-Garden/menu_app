@@ -9,8 +9,8 @@ menu_app
 https://menu-app32515.herokuapp.com/
 
 # テスト用アカウント
-アカウント名：テスト１
-email:sample@sample.gmail.com
+アカウント名：テスト１  
+email:sample@sample.gmail.com  
 password: 000000
 
 # 利用方法
