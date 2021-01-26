@@ -38,9 +38,11 @@ password: 000000
 tag付け機能  
 献立お気に入り機能
 
-# 実装した機能についてのGIFとdemo
-![](https://i.gyazo.com/548332c0c53a75735ba1ae8e3fee6bb2.png)
+# 実装した機能についてのGIF
+
+demo1  
 ![demo](https://gyazo.com/e8a11202074897fbff596d8302e2d55a/raw)
+demo2
 ![demo](https://gyazo.com/3f353342d99753f3993a5196a293e461/raw)
 
 # 工夫したポイント
