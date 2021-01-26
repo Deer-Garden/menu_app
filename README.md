@@ -23,16 +23,16 @@ password: 000000
 そして、毎日何かと時間を取られる献立を自動化させて、少しでも家事の手間と時間を減らすことで時間を捻出して有効活用したいと考えました。
 
 # 洗い出した用件
-提案機能
-ユーザー登録機能
-ユーザー編集機能
-ユーザー削除機能
-サインイン機能
-サインアウト機能
-献立投稿機能
-献立編集機能
-献立削除機能
-献立提案機能
+提案機能  
+ユーザー登録機能  
+ユーザー編集機能  
+ユーザー削除機能  
+サインイン機能  
+サインアウト機能  
+献立投稿機能  
+献立編集機能  
+献立削除機能  
+献立提案機能  
 
 # 実装予定の機能
 tagづけ機能
@@ -86,10 +86,10 @@ tagづけ機能
 - has_many:main_menus, through: main_menu_tag_relation -->
 
 # ローカルでの動作方法
-% git clone https://github.com/Deer-Garden/menu_app
-% cd menu_app
-% bundle install
-% rails db:create
-% rails db:migrate
-% rails s
-http://localhost:3000
+% git clone https://github.com/Deer-Garden/menu_app  
+% cd menu_app  
+% bundle install  
+% rails db:create  
+% rails db:migrate  
+% rails s  
+http://localhost:3000  
