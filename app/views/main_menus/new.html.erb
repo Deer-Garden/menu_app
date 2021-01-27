@@ -13,8 +13,10 @@
       </div>
       <div class="field">
         <label class="form-image">
-        <%= f.label :image , "画像" %>
-        <%= f.file_field :image, class: 'hidden' %>
+          <%= f.label :image , "画像" %>
+          <%= f.file_field :image, class: 'hidden' %>
+          <div id="image-list"></div>
+          <%= image_tag @main_menu.image, id: 'image', class: "review-img" if @main_menu.image.present? %>
     　　</label>
       </div>
       <div class="field">
@@ -30,6 +32,8 @@
         <%= f.text_area :recipe, placeholder: "鍋と玉ねぎを入れる" %>
       </div>
       <%= f.submit "投稿する" , :class=> 'new-btn' %>
+      
     <% end %>
   </div>
+  
 </div>

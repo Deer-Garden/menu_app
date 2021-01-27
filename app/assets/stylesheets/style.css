@@ -294,4 +294,11 @@ h3 {
 .dummy_main{
     margin-top: 30px;
 }
+ 
 
+/* preview */
+img {
+  height: 90%;
+  width: 30%;
+  object-fit: contain;
+}
