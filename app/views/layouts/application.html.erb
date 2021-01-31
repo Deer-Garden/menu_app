@@ -6,9 +6,9 @@
     <title>MenuApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag 'application' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheets" href="style.css">
-    
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
   </head>
@@ -16,7 +16,7 @@
   <body>
     
     <%= yield %>
-   <%= javascript_pack_tag 'application' %>
+   
   </body>
   
 </html>

@@ -38,10 +38,12 @@ class MainMenusController < ApplicationController
   end
 
   def destroy
-
     main_menu = MainMenu.find(params[:id])
     main_menu.destroy
+  end
 
+  def likes
+    @main_menus = current_user.like_main_menus.includes(:user).recent
   end
 
   private
