@@ -2,7 +2,9 @@
 <%= render "suggest" %>
 <p class='past_menu'>投稿一覧</p>
 <%= render "dummy" %>
-<%= render "main_menu"%>
+<div class="row d-flex">
+  <%= render "main_menu"   %>
+</div>
 <% if user_signed_in? %>
   <%= link_to(new_main_menu_path, class: 'purchase-btn') do %>
     <span class='purchase-btn-text'>投稿する</span>

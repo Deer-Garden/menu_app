@@ -1,0 +1,5 @@
+<% if main_menu.like_by?(current_user) %> 
+  <%= render 'main_menus/like', main_menu: main_menu %>
+<% else %>
+  <%= render 'main_menus/unlike', main_menu: main_menu %>
+<% end %>

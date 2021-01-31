@@ -1,7 +1,20 @@
 <div class='main'>
   <div class='contents row'>
     <div class='main_menu_list'>
+      
       <% @main_menus.each do |main_menu| %>
+        <div class='like-counter'>
+          <% if user_signed_in? %>
+            <% if main_menu.liked_by?(current_user) %>
+                <p><span>お気に入り解除: </span><span class='like-count'><%=link_to main_menu.likes.count, main_menu_likes_path(main_menu.id), method: :delete %></span></p>
+            <% else %>
+                <p><span>お気に入り登録: </span><span class='like-count'><%=link_to main_menu.likes.count, main_menu_likes_path(main_menu.id), method: :post %></span></p>
+            <% end %>
+          <% else %>
+            <p><span>お気に入り数: </span><span class='like-count'><%= main_menu.likes.count %></span></p>
+          <% end %>
+        </div>
+        
         <%= link_to main_menu_path(main_menu.id) do %>
           <div class='menu'>
             <div class='main_menus_header'>
@@ -23,6 +36,10 @@
           </div>
         <% end %>
       <% end %>
+
+      
+
+
     </div>  
   </div>
 </div>
