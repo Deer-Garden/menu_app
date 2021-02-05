@@ -21,5 +21,20 @@
             </ul>
         </div>
 
+        <div class="menu-content-1">
+            <ul class="menu-contents">
+                <% if user_signed_in? %>
+                    <li><%= link_to current_user.nickname, user_path(current_user.id), class: "nav-item-1" %></li> 
+                    <li><%= link_to '新規投稿', new_main_menu_path, class: "nav-item-1" %></li>
+
+                    <li><%= button_to 'サインアウト', destroy_user_session_path, method: :delete, class: "nav-item-button-1" %></li>
+
+                <% else %>
+                    <li><%= link_to 'サインイン', new_user_session_path, class: "nav-item-1" %></li>
+                    <li><%= link_to '新規登録', new_user_registration_path, class: "nav-item-1" %></li>
+                <% end %>
+            </ul>
+        </div>
+
     </div>
 </header>
