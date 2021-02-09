@@ -1,6 +1,44 @@
-<div class="contents row">
-  <div class="container">
-    <h3>編集画面</h3>
-    <%= render partial: "form", locals: { main_menu: @main_menu } %>
+<div class="box-1">
+  <div class="box-inner">
+        <h1>編集画面</h1>
+        <%= form_with(model: @main_menu, local: true) do |f| %>
+          <%= render 'error.messages', model: f.object %>
+          <div class="box-menu-name">
+            <%= f.label :name , "料理名" %><br />
+            <%= f.text_field :name, placeholder: "親子丼", autofocus: true, autocomplete: "name" %>
+          </div>
+
+          <div class="box-kcal">
+            <%= f.label :kcal , "カロリー" %>
+            <%= f.text_field :kcal, placeholder: "400" %>
+          </div>
+
+          <div class="box-image">
+            <label class="form-image">
+              <%= f.label :image , "画像" %>
+              <%= f.file_field :image, class: 'hidden' %>
+              <div id="image-list"></div>
+              <%= image_tag @main_menu.image, id: 'image', class: "review-img" if @main_menu.image.present? %>
+            </label>
+          </div>
+
+          <div class="box-ingredient">
+            <%= f.label :ingredient , "材料" %>
+            <%= f.text_area :ingredient, placeholder: "白菜 1/2" %>
+          </div>
+
+          <div class="box-expiration">
+            <%= f.label :expiration , "説明" %>
+            <%= f.text_area :expiration, placeholder: "とろとろ卵の甘じょっぱい親子丼" %>
+          </div>
+
+          <div class="box-recipe">
+            <%= f.label :recipe , "レシピ" %>
+            <%= f.text_area :recipe, placeholder: "鍋と玉ねぎを入れる" %>
+          </div>
+          <div class="box-post">
+            <%= f.submit "投稿する" %>
+          </div>
+        <% end %>
   </div>
 </div>
