@@ -37,14 +37,12 @@
     <% if user_signed_in? && current_user.id == @main_menu.user_id %>
       <div class="more">
         <ul class="more_list">
-          <li>
+          <li class="edit-list">
             <%= link_to '編集', edit_main_menu_path(@main_menu.id), method: :get %>
           </li>
 
-          <li>
-
+          <li class="delete-list">
             <%= button_to '削除', main_menu_path, {method: :delete, class: "delete-button"} %>
-
           </li>
         </ul>
       </div>

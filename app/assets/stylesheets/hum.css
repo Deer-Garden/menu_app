@@ -127,7 +127,7 @@
     display: flex;
   }
 
-  .nav-item-1, .nav-item-button-1{
+  .nav-item-1 {
     padding: 10px;
     border: solid 1px white;
     margin: 0 5px;
@@ -141,4 +141,5 @@
     background-color: rgb(248, 191, 117);
   }
 }
+
 
