@@ -634,3 +634,18 @@ img {
     width: 50px;
     text-align: center;
 }
+
+/* userの詳細画面 */
+.none-menu {
+    color: grey;
+  }
+.none-menu p {
+    background-color: honeydew;
+}
+
+.likes-main_menu {
+    margin: 0 5%;
+}
+.likes-main_menu p {
+    margin: 5px 0;
+}
