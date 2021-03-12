@@ -1,0 +1,16 @@
+.link-like {
+  font-size: 24%;
+}
+
+.heart {
+  color: red;
+}
+
+.likes-main_menu {
+  display: flex;
+  list-style: none;
+}
+
+.likes-main_menu p {
+  padding: 10px 10px 0 0;
+}
