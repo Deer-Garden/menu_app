@@ -1,3 +1,4 @@
+
 .likes-main_menu {
   display: flex;
   justify-content: space-around;
@@ -12,13 +13,14 @@
   margin-left: 10px;
 }
 
-.likes-main_menu ul {
+.likes-main_menu ul{
   display: flex;
   list-style: none;
 }
 
 .likes-main_menu p {
   padding: 10px 10px 0 0;
+
 }
 
 .link-like-image {
@@ -27,4 +29,3 @@
   border-radius: 10%;
   padding: 10px;
 }
-
