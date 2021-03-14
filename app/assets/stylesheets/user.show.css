@@ -1,16 +1,31 @@
+
+.likes-main_menu {
+  display: flex;
+  justify-content: space-around;
+}
+
 .link-like {
   font-size: 24%;
 }
 
 .heart {
   color: red;
+  margin-left: 10px;
 }
 
-.likes-main_menu {
+.likes-main_menu ul{
   display: flex;
   list-style: none;
 }
 
 .likes-main_menu p {
   padding: 10px 10px 0 0;
+
+}
+
+.link-like-image {
+  width: 53%;
+  height: 120px;
+  border-radius: 10%;
+  padding: 10px;
 }

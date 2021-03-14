@@ -2,7 +2,7 @@
 
 <div class="contents rows">
   <p><%= @nickname %>さんの投稿一覧</p>
-  <%if @main_menu.present? %>
+  <%if @main_menus.present? %>
     <div class='user_main'>
       <div class='contents row'>
         <div class='main_menu_list'>
@@ -37,7 +37,11 @@
     </div>
   <% end %>
 </div>
+  <div class="likes-head">
+    <p><span class="material-icons heart">favorite</span>お気に入り</p>
+  </div>
 <div class="likes-main_menu">
+<<<<<<< Updated upstream
   <% @like_main_menus.each do |main_menu| %>
     </ul>
       <li><span class="material-icons heart">favorite</span></li>
@@ -45,5 +49,11 @@
     <ul>
     <%= image_tag main_menu.image, {class:"link-like-image"} %>
   <% end %>
+=======
+    <% @like_main_menus.each do |main_menu| %>
+      
+      <%= image_tag main_menu.image, {class:"link-like-image"} %>
+    <% end %>
+>>>>>>> Stashed changes
 </div>
 
