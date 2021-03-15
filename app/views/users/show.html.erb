@@ -41,19 +41,10 @@
     <p><span class="material-icons heart">favorite</span>お気に入り</p>
   </div>
 <div class="likes-main_menu">
-<<<<<<< Updated upstream
+
   <% @like_main_menus.each do |main_menu| %>
-    </ul>
-      <li><span class="material-icons heart">favorite</span></li>
-      <li><%=link_to main_menu.name, main_menu_path(main_menu.id), {class: "link-like"}%></li>
-    <ul>
     <%= image_tag main_menu.image, {class:"link-like-image"} %>
   <% end %>
-=======
-    <% @like_main_menus.each do |main_menu| %>
-      
-      <%= image_tag main_menu.image, {class:"link-like-image"} %>
-    <% end %>
->>>>>>> Stashed changes
+
 </div>
 
