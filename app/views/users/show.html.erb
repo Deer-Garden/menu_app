@@ -5,25 +5,12 @@
   <%if @main_menus.present? %>
     <div class='user_main'>
       <div class='contents row'>
-        <div class='main_menu_list'>
+        <div class='user_main_menu_list'>
           <% @main_menus.each do |main_menu| %>
             <%= link_to main_menu_path(main_menu.id) do %>
               <div class='user_menu'>
-                <div class='user_main_menus_header'>
-                  <div class='user_main_menus_name'>
-                    <%= main_menu.name %>
-                  </div>
-                  <div class='user_main_menus_kcal'>
-                    <%= main_menu.kcal %>kcal
-                  </div>
-                </div>
                 <div class='user_main_menus_img'>
-                  <%= image_tag main_menu.image, class: 'main_menu_image' %>
-                </div>
-                <div class='user_main_menus_footer'>
-                  <div class='main_menu_user_name'>
-                    <span>by</span><%= main_menu.user.nickname %>
-                  </div>
+                  <%= image_tag main_menu.image, class: 'user_main_menu_image' %>
                 </div>
               </div>
             <% end %>
