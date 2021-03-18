@@ -655,6 +655,10 @@ img {
     margin: 5px 0;
 }
 
+.user_main_menu_list {
+  display: flex;
+}
+
 /*  */
 @media (min-width: 600px) {
   .contain_wrapper {
