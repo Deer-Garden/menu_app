@@ -9,9 +9,7 @@
           <% @main_menus.each do |main_menu| %>
             <%= link_to main_menu_path(main_menu.id) do %>
               <div class='user_menu'>
-                <div class='user_main_menus_img'>
                   <%= image_tag main_menu.image, class: 'user_main_menu_image' %>
-                </div>
               </div>
             <% end %>
           <% end %>

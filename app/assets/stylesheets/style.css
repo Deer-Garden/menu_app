@@ -659,6 +659,14 @@ img {
   display: flex;
 }
 
+.user_main_menu_image {
+  align-content: flex-start;
+  width: 53%;
+  height: 120px;
+  border-radius: 10%;
+  padding: 10px;
+}
+
 /*  */
 @media (min-width: 600px) {
   .contain_wrapper {
