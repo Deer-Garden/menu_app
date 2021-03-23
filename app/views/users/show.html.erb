@@ -26,9 +26,8 @@
     <p><span class="material-icons heart">favorite</span>お気に入り</p>
   </div>
 <div class="likes-main_menu">
-    <% @like_main_menus.each do |main_menu| %>
-      
-      <%= image_tag main_menu.image, {class:"link-like-image"} %>
-    <% end %>
+  <% @like_main_menus.each do |main_menu| %>
+    <%= image_tag main_menu.image, {class:"link-like-image"} %>
+  <% end %>
 </div>
 
