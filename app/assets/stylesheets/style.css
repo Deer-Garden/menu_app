@@ -640,33 +640,6 @@ img {
     text-align: center;
 }
 
-/* userの詳細画面 */
-.none-menu {
-    color: grey;
-  }
-.none-menu p {
-    background-color: honeydew;
-}
-
-.likes-main_menu {
-    margin: 0 5%;
-}
-.likes-main_menu p {
-    margin: 5px 0;
-}
-
-.user_main_menu_list {
-  display: flex;
-}
-
-.user_main_menu_image {
-  align-content: flex-start;
-  width: 53%;
-  height: 120px;
-  border-radius: 10%;
-  padding: 10px;
-}
-
 /*  */
 @media (min-width: 600px) {
   .contain_wrapper {
