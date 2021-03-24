@@ -1,0 +1,12 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+     main_menu:
+       name: テキスト
+       expiration: 説明文
+       ingredient: 材料
+       recipe: レシピ
+       kcal: カロリー
+       image: 画像

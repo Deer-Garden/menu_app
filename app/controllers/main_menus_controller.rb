@@ -14,7 +14,8 @@ class MainMenusController < ApplicationController
 
   def create
     @main_menu = MainMenu.new(main_menu_params)
-    if @main_menu.save
+    if @main_menu.valid?
+      @main_menu.save
       redirect_to root_path
     else
       render :new
