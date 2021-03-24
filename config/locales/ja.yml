@@ -4,7 +4,7 @@ ja:
      user:
        nickname: ニックネーム
      main_menu:
-       name: テキスト
+       name: 料理名
        expiration: 説明文
        ingredient: 材料
        recipe: レシピ
