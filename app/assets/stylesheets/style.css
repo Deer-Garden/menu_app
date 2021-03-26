@@ -641,6 +641,29 @@ img {
 }
 
 /* forget画面 */
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  color: #111111;
+}
+
+.box-signin {
+  border-style: none;
+  width: 100%;
+  height: 31px;
+  background: linear-gradient(to bottom,#f3b85f,rgb(226, 143, 34));
+  border-radius: 3px;
+  border: 1px #a88734 solid;
+}
+
+.box-signin :hover {
+  cursor: pointer;
+  background: #f0c14b;
+}
+
 
 
 /*  */
